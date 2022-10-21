@@ -1,5 +1,5 @@
 {
-  "name": "@swenssson/ejspdf",
+  "name": "@swensson/ejspdf",
   "version": "1.0.0",
   "description": "Small util to convert ejs templates to pdf",
   "main": "index.js",
