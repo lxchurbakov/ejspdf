@@ -1,6 +1,6 @@
 {
   "name": "@swensson/ejspdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small util to convert ejs templates to pdf",
   "main": "index.js",
   "author": "swensson",
