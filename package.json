@@ -1,0 +1,13 @@
+{
+  "name": "@swenssson/ejspdf",
+  "version": "1.0.0",
+  "description": "Small util to convert ejs templates to pdf",
+  "main": "index.js",
+  "author": "swensson",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "puppeteer": "^19.0.0"
+  }
+}
