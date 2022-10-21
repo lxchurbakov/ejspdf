@@ -6,8 +6,10 @@ const convert_to_pdf = async (puppeteer_navigation_predicate) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await puppeteer_navigation_predicate(page);
-  await page.waitForNavigation({ waitUntil: 'networkidle0' });
+  await Promise.all([
+    puppeteer_navigation_predicate(page),
+    page.waitForNavigation({ waitUntil: 'networkidle0' }),
+  ]);
 
   const pdf = await page.pdf({ format: 'A4', printBackground: true });
   await browser.close();
